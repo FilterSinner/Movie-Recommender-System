@@ -1,8 +1,6 @@
 # Movie-Recommender-System
 
-# Content-Based Movie Recommendation System (with Streamlit Deployment)
-
-Discover a movie recommendation system that suggests similar films based on their content. This system is deployed with Streamlit for a user-friendly web interface. It's great for users with unique tastes and those looking to find similar movies.
+A movie recommendation system that suggests similar films based on their content. This system is deployed with Streamlit for a user-friendly web interface. It's great for users with unique tastes and those looking to find similar movies.
 
 
 **Give it a try:** [Movie Recommender System](https://movie-recommender-system-ozal.streamlit.app)
