@@ -20,4 +20,4 @@ A movie recommendation system that suggests similar films based on their content
 - pickle
 
 ## Acknowledgments
-The project utilizes data from TMDB (The Movie Database) with a collection of 5000 movie titles. It also relies on the TMDB API to access movie data.
+The project utilizes data from TMDB (The Movie Database) with a collection of 5000 movie titles. It also relies on the TMDB API to access movie posters.
