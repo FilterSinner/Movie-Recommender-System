@@ -3,7 +3,6 @@ import streamlit as st
 import pickle
 import requests
 
-
 def fetch_poster(movie_id):
     url = "https://api.themoviedb.org/3/movie/{}?api_key=75406d4155df886fcca731454750f598&language=en-US".format(
         movie_id)
@@ -64,3 +63,56 @@ if st.button('Show Recommendation'):
     with col5:
         st.image(recommended_movie_posters[4])
         st.text(recommended_movie_names[4])
+
+
+footer = """<style>
+a:link , a:visited {
+color: 	rgb(192,192,192);
+background-color: transparent;
+text-decoration: none;
+}
+
+a:hover, a:active {
+color: white;
+background-color: transparent;
+text-decoration: none;
+}
+
+.footer {
+position: fixed;
+bottom: 0px;
+right: 0;
+color: 	rgb(192,192,192);
+text-align: right;
+padding: 10px;
+}
+</style>
+<div class="footer">
+<p>Made with ❤ by <a href="https://github.com/FilterSinner" target="_blank">Ojal Binoj Koshy</a></p>
+</div>
+"""
+
+st.markdown(footer,unsafe_allow_html=True)
+
+hide_streamlit_style = """
+            <style>
+            {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+background-image: url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&q=80&w=1770&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: cover;
+
+}
+[data-testid="stHeader"]{
+    background-color:rgba(0,0,0,0);
+
+}
+</style>
+"""
+st.markdown(page_bg_img, unsafe_allow_html=True)
